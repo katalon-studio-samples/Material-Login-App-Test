@@ -28,8 +28,14 @@ Mobile.tap(findTestObject('Material Login App/android.widget.TextView0 - No acco
 'Set text to the Name text field'
 Mobile.setText(findTestObject('Material Login App/android.widget.EditText0'), 'name', 0)
 
+'Validate that the text input is set to Name text field'
+Mobile.verifyElementAttributeValue(findTestObject('Material Login App/android.widget.EditText0'), 'text', 'name', 5)
+
 'Set text to the Address text field'
 Mobile.setText(findTestObject('Material Login App/android.widget.EditText1'), 'address', 0)
+
+'Validate that the text input is set to Address text field'
+Mobile.verifyElementAttributeValue(findTestObject('Material Login App/android.widget.EditText1'), 'text', 'address', 5)
 
 'Hide the keyboard to show other text fields'
 Mobile.hideKeyboard()
@@ -37,11 +43,18 @@ Mobile.hideKeyboard()
 'Set text to the Email text field'
 Mobile.setText(findTestObject('Material Login App/android.widget.EditText2'), 'email@domain.com', 0)
 
+'Validate that the text input is set to Email text field'
+Mobile.verifyElementAttributeValue(findTestObject('Material Login App/android.widget.EditText2'), 'text', 'email@domain.com', 
+    5)
+
 'Hide the keyboard to show other text fields'
 Mobile.hideKeyboard()
 
 'Set text to the Mobile Phone text field'
 Mobile.setText(findTestObject('Material Login App/android.widget.EditText3'), '099949197', 0)
+
+'Validate that the text input is set to Mobile Phone text field'
+Mobile.verifyElementAttributeValue(findTestObject('Material Login App/android.widget.EditText3'), 'text', '099949197', 5)
 
 'Hide the keyboard to show other text fields'
 Mobile.hideKeyboard()
@@ -49,13 +62,19 @@ Mobile.hideKeyboard()
 'Set text to the Password text field'
 Mobile.setText(findTestObject('Material Login App/android.widget.EditText4'), 'password', 0)
 
+'Validate that the text input is set to Password text field'
+Mobile.verifyElementAttributeValue(findTestObject('Material Login App/android.widget.EditText4'), 'text', 'password', 5)
+
 'Hide the keyboard to show other text fields'
 Mobile.hideKeyboard()
 
 'Set text to the Re-enter Password text field'
 Mobile.setText(findTestObject('Material Login App/android.widget.EditText5'), 'password', 0)
 
-'Hide the keyboard to show other text fields'
+'Validate that the text input is set to Re-enter Password text field'
+Mobile.verifyElementAttributeValue(findTestObject('Material Login App/android.widget.EditText5'), 'text', 'password', 5)
+
+'Hide the keyboard to show the Create Account button'
 Mobile.hideKeyboard()
 
 'Tap on the \"Create Account\" button to finish registration'
