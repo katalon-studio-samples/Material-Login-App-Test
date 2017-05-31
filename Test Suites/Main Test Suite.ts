@@ -4,6 +4,7 @@
    <name>Main Test Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
+   <lastRun>2017-05-31T16:57:36</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -15,5 +16,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Create Account</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>abad8267-de34-4fc4-af66-f75d121387a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Create Account on Kobiton</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
